@@ -2,7 +2,7 @@
 
 A simulation of the Burger King order processing experience, leveraging JavaScript Promises to model asynchronous operations such as order processing, preparation, and delivery.
 
-[Live Demo](
+[Live Demo](https://niks1503.github.io/Burger-King-Project/)
 
 ## Features
 - **Asynchronous Order Processing**: Utilizes JavaScript Promises to simulate the asynchronous nature of order processing in a real restaurant environment.
