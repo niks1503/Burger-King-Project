@@ -5,19 +5,19 @@ const orderId = document.querySelector("#orderId");
 
 function viewImage() {
   if (document.querySelector("#burger").checked) {
-    foodImage.src = "burger.jpg";
+    foodImage.src = "images/burger.jpg";
     foodImage.style.display = "block";
     orderId.textContent = generateOrderId();
     orderId.style.display = "block";
   }
   if (document.querySelector("#fries").checked) {
-    foodImage.src = "fries.jpg";
+    foodImage.src = "images/fries.jpg";
     foodImage.style.display = "block";
     orderId.textContent = generateOrderId();
     orderId.style.display = "block";
   }
   if (document.querySelector("#drink").checked) {
-    foodImage.src = "drinks.jpg";
+    foodImage.src = "images/drinks.jpg";
     foodImage.style.display = "block";
     orderId.textContent = generateOrderId();
     orderId.style.display = "block";
