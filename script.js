@@ -3,24 +3,26 @@ const orderButton = document.querySelector("#orderButton");
 const foodImage = document.querySelector("#foodImage");
 const orderId = document.querySelector("#orderId");
 
-function viewImage() {
+async function viewImage() {
   if (document.querySelector("#burger").checked) {
     foodImage.src = "images/burger.jpg";
     foodImage.style.display = "block";
     orderId.textContent = generateOrderId();
     orderId.style.display = "block";
-  }
-  if (document.querySelector("#fries").checked) {
+  } else if (document.querySelector("#fries").checked) {
     foodImage.src = "images/fries.jpg";
     foodImage.style.display = "block";
     orderId.textContent = generateOrderId();
     orderId.style.display = "block";
-  }
-  if (document.querySelector("#drink").checked) {
+  } else if (document.querySelector("#drink").checked) {
     foodImage.src = "images/drinks.jpg";
     foodImage.style.display = "block";
     orderId.textContent = generateOrderId();
     orderId.style.display = "block";
+  } else {
+    foodImage.style.display = "none";
+    orderId.style.display = "none";
+    orderId.textContent = "";
   }
 }
 
